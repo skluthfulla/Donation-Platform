@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundrise Find ur Needs</title>
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="C:\Users\LUTHU\Downloads\donationmin\Donation\vig-logo.webp">
+  <script src="https://kit.fontawesome.com/33cc725ef4.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+  <!-- AOS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Font link -->
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- custom js file link  -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- NAV BAR starts -->
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo">
+      Fundrise Find ur Needs
+    </a>
+    
+    <nav class="navbar">
+      <a data-aos="zoom-in-right" data-aos-delay="300" href="#home">Home</a>
+      <a data-aos="zoom-in-right" data-aos-delay="450"
+        href="file:///C:/Users/LUTHU/Downloads/donationmin/Donation/contact%20us/contact.html">Contact us</a>
+      <a data-aos="zoom-in-right" data-aos-delay="750" href="#destination">Services</a>
+
+      <a data-aos="zoom-in-right" data-aos-delay="870" href="#blogs">Blogs</a>
+    </nav>
+
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view"
+      class="btn">Donate now</a>
+  </header>
+  <!-- NAV BAR ENDS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 150,
+    });
+  </script>
+
+  <!-- VDO SLIDER starts -->
+  <header id="home">
+    <a href="#" class="brand">Be that change</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="#">Home</a>
+        <a href="#">Donate</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+
+    <video class="video-slide active " src="C:\Users\LUTHU\Downloads\donationmin\Donation\video\Donation video.mp4" autoplay 
+      muted loop></video>
+    <video class="video-slide" src="C:\Users\LUTHU\Downloads\donationmin\Donation\video\Volunteer.mp4" autoplay muted
+      loop></video>
+    <video class="video-slide" src="C:\Users\LUTHU\Downloads\donationmin\Donation\video\Contact_Us.mp4" autoplay muted
+      loop></video>
+
+
+
+    <div class="content active">
+      <h1 id="ab">Contribute for education<br /></h1>
+      <p id="ab">Donate money for students & college requirements.</p>
+      <a href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view">Contribute now</a>
+    </div>
+    <div class="content">
+      <h1 id="ab">Volunteer with us <br /><span> </span></h1>
+      <p id="ab">Join us in reaching your goals, lets make this a better place to live in !!</p>
+      <a href="file:///C:/Users/LUTHU/Downloads/donationmin/Donation/contact%20us/contact.html">Connect with us</a>
+    </div>
+    <div class="content">
+      <h1 id="ab">Contact us<br /><span></span></h1>
+      <p id="ab">Get your issues resolved. Connect with us.</p>
+      <a href="file:///C:/Users/LUTHU/Downloads/donationmin/Donation/contact%20us/contact.html">Contact us</a>
+    </div>
+    
+    <div class="slider-navigation">
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("on click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function (manual) {
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+
+      setTimeout(active, 3100);
+    };
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+  </script>
+
+  <!-- VDO SLIDER ends -->
+
+  <!-- FACTS starts -->
+  <section class="about" id="about">
+    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+      <video src="video/don_2.mp4" muted autoplay loop class="video active"></video>
+      <div class="controls">
+        <span class="control-btn" data-src="video/don_2.mp4"></span>
+        <span class="control-btn" data-src="C:\Users\LUTHU\Downloads\donationmin\Donation\video\Education.mp4"></span>
+        <span class="control-btn" data-src="C:\Users\LUTHU\Downloads\donationmin\Donation\video\don _3.mp4"></span>
+      </div>
+    </div>
+
+    <div class="content" data-aos="fade-left" data-aos-delay="600">
+      <!-- <span>Why Donate?</span> -->
+      <h3>Why Donate?</h3>
+      <p>
+        Two-thirds of people in India live in poverty: 68.8% of the Indian population lives on less than $2 a day. Over
+        30% even have less than $1.25 per day available - they are considered extremely poor. <br> <br> Donations are
+        helpful to students because they provide access to education, reduce financial burdens, enhance learning
+        opportunities, support extracurricular activities, provide specialized support, create a positive community
+        impact, and promote research and innovation. By donating, individuals and organizations can make a meaningful
+        difference in the lives of students and contribute to the betterment of society as a whole. <br>
+      </p>
+      <!-- <a href="#" class="btn">read more</a> -->
+    </div>
+  </section>
+  <!-- FACTS end -->
+
+  <!-- CONTRIBUTE STARTS -->
+  <section class="destination">
+    <div class="heading" id="destination">
+      <span>Contribute now !!!</span>
+      <h1>Be that change</h1>
+    </div>
+
+    <div class="box-container">
+
+
+      <div class="box" data-aos="fade-up" data-aos-delay="600">
+        <div class="image">
+          <img src="image/money.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>Money</h3>
+          <p>Contribute to a child's basic education & needs.<br>Help sustain someone's future</p>
+          <a href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view">Donate Now <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="750">
+        <div class="image">
+          <img src="C:\Users\LUTHU\Downloads\donationmin\Donation\image\clg rq.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <h3>College Requirements</h3>
+          <p>Contribute to a College Requirements & needs.</p>
+          <a href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view">Sponsor Now <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- BLOG starts -->
+  <section class="blogs">
+    <div class="heading" id="blogs">
+      <span>blogs & posts</span>
+      <h1>The untold stories</h1>
+    </div>
+
+    <div class="box-container">
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+        <div class="image">
+          <img src="image/giving.jpg" alt="" />
+        </div>
+        <div class="content">
+          <a href="https://www.ef.com/wwen/blog/efacademyblog/importance-giving-back-to-your-community/"
+            class="link">The importance and benefits of giving back to your community</a>
+          <p>
+            Volunteering your time to support a cause you are passionate about is something you will never regret. It
+            will enrich your life, familiarize you with your community, and.....
+          </p>
+          <div class="icon">
+            <a href="#"><i class="fas fa-clock"></i> 26th may, 2022</a>
+            <a href="#"><i class="fas fa-user"></i> by admin</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+        <div class="image">
+          <img src="image/hunger.webp" alt="" />
+        </div>
+        <div class="content">
+          <a href="https://www.giveindia.org/blog/hunger-is-eating-into-india/" class="link">Hunger is eating into
+            India</a>
+          <p>
+            An estimated 189 million people in India were already undernourished before the pandemic began. According to
+            a study released earlier this month, the first wave of COVID-19 pushed 23 crore more Indians....
+          </p>
+          <div class="icon">
+            <a href="#"><i class="fas fa-clock"></i> 26th may, 2022</a>
+            <a href="#"><i class="fas fa-user"></i> by admin</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+        <div class="image">
+          <img src="image/edu.jpg" alt="" />
+        </div>
+        <div class="content">
+          <a href="https://www.smilefoundationindia.org/blog/education-for-poor-children/" class="link">Educating Poor
+            Children</a>
+          <p>
+            The key to development lies in educating children. Partnerships between the government and other
+            stakeholders can fast-track the process of education for poor children. Improving access to education,
+            counseling of students...
+          </p>
+          <div class="icon">
+            <a href="#"><i class="fas fa-clock"></i> 26th may, 2022</a>
+            <a href="#"><i class="fas fa-user"></i> by admin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blogs section ends -->
+
+  <!-- FOOTER starts -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <p>
+            Change begins with us. Be that change encourages and promotes, sharing and spreading happiness.
+            We the team of be that change scouts for donation. The donation is collected and distributed to people in
+            need.
+          </p>
+          <img class="mainsdg" src="SDG.png" alt="" />
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="secicon">
+            <li> <img class="icon" src="image/map_icon.png" alt="" />VIIT Vizag,<br />
+               Visakhapatnam District.,<br />
+              Andhra Pradesh, INDIA - 530049</li>
+            <li> <img class="icon" src="image/phone_icon.png" alt="" />9398575020<br>9398981683</li>
+            <li><img class="icon" src="image/enve_icon-removebg-preview.png" alt="" />skluthufulla@gmail.com<br>sesettilohithsesettilohith@gmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            
+            <div class="swiper-wrapper" >
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper_block">
+                  <img src="C:\Users\LUTHU\Downloads\donationmin\Donation\image\luthufulla_project.jpg" class="luthu_img">
+                  <div class="icon">
+                    <a href="https://www.instagram.com/luthfulla_sk/" class="font_icons"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Luthfulla.sk?mibextid=ZbWKwL" class="font_icons"> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/skluthfulla" class="font_icons"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/LuthfullaSk" class="font_icons"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Footer ends -->
+
+
+</body>
+
+</html>
